@@ -5769,6 +5769,13 @@ react-native-screens@^2.11.0:
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.11.0.tgz#34b30b07c2d04aa100cba984b944b303bfa43ea6"
   integrity sha512-vJzJE3zI1XUtqthrX3Dh2TBQWB+xFyaGhF52KBq9FjJUN5ws4xpLZJxBWa1KbGV3DilmcSZ4jmZR5LGordwE7w==
 
+react-native-slide-to-unlock@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/react-native-slide-to-unlock/-/react-native-slide-to-unlock-0.1.6.tgz#015b0b9916d6bbe863052ae02cb089a3d2e35c0c"
+  integrity sha512-6dywdbdgyRc3d0Ni+VKPrJW0DtA+38UuMjbewr+pGF6gLZal3dWn5RzILKwLYsynzCp3dljAXsKgFMSYFCdyQg==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-native@0.63.2:
   version "0.63.2"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.2.tgz#eaebf3430577b37fbd66ef228a86b3408259ef8e"

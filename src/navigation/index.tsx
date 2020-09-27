@@ -1,10 +1,9 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from '../container/HomeScreen';
-import WelcomeScreen from '../container/WelcomeScreen';
-import ButtonOptionScreen from '../container/ButtonOptionScreen';
-import Screens from '../constant/Screens';
+import React from 'react';
+import { Color } from '../asset';
+import { Screens } from '../constant/AppConstant';
+import { ButtonOptionScreen, HomeScreen, WelcomeScreen } from '../container';
 
 const Stack = createStackNavigator();
 
@@ -18,11 +17,25 @@ function OnboardingStack() {
 
 function AppStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name={Screens.HomeScreen} component={HomeScreen} />
+    <Stack.Navigator 
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: Color.primary,
+        },
+        headerTintColor: Color.white,
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+    }}>
+      <Stack.Screen 
+        name={Screens.HomeScreen} 
+        component={HomeScreen} 
+        options={{ title: 'Home Screen'}}
+      />
       <Stack.Screen
         name={Screens.ButtonOptionScreen}
         component={ButtonOptionScreen}
+        options={{ title: 'Button Option'}}
       />
     </Stack.Navigator>
   );

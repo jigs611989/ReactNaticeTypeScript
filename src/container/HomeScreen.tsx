@@ -1,18 +1,23 @@
-import React from 'react';
-import { View, Text, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import Screens from '../constant/Screens';
+import React from 'react';
+import { SafeAreaView, View } from 'react-native';
+import { String } from '../asset';
+import { Button, UserName } from '../component';
+import { Screens } from '../constant/AppConstant';
+import style from './style/HomeScreen';
 
-export interface Props {}
-
-const HomeScreen: React.FC<Props> = (props) => {
+const HomeScreen: React.FC = () => {
   const { navigate } = useNavigation();
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Pressable onPress={() => navigate(Screens.ButtonOptionScreen)}>
-        <Text>Home Screen</Text>
-      </Pressable>
-    </View>
+    <SafeAreaView style={[style.rootContainer, style.container]}>
+      <UserName />
+      <View style={style.spacer} />
+      <Button 
+        title={String.Buttons.buttonOption} 
+        onPress={() => navigate(Screens.ButtonOptionScreen)}
+        style={style.buttonStyle}
+      />
+    </SafeAreaView>
   );
 };
 

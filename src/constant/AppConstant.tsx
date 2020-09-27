@@ -6,4 +6,9 @@ const Screens = {
   ButtonOptionScreen: 'ButtonOptionScreen',
 };
 
-export default Screens;
+const regex = {
+  email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+  name: /^[A-Za-z\s]+$/
+}
+
+export { Screens, regex };

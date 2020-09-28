@@ -3,11 +3,11 @@ module.exports = {
   collectCoverage: true,
   moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
-    '@react-navigation/native': '<rootDir>/__mock__/react-navigation.js',
+    '@react-navigation/native': '<rootDir>/__mock__/react-navigation.tsx',
     'react-native-slide-to-unlock':
-      '<rootDir>/__mock__/react-native-slide-to-unlock.js',
-    '@react-native-community/blur': '<rootDir>/__mock__/blurview.js',
-    DeviceType: '<rootDir>/__mock__/DeviceTypeModule.js',
+      '<rootDir>/__mock__/react-native-slide-to-unlock.tsx',
+    '@react-native-community/blur': '<rootDir>/__mock__/blurview.tsx',
+    DeviceType: '<rootDir>/__mock__/DeviceTypeModule.ts',
   },
   setupFiles: ['<rootDir>/__mock__/setup.js'],
   testPathIgnorePatterns: ['/node_modules/'],

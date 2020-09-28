@@ -5,13 +5,12 @@ const style = StyleSheet.create({
   ...AppStyle,
   container: {
     alignItems: 'center',
+    justifyContent: 'space-between',
   },
-  labelStyle: {
-    color: '#adff2f',
-  },
-  spacer: {
-    flex: 1,
-    backgroundColor: 'red',
+  image: {
+    height: 300,
+    width: 300,
+    resizeMode: 'contain',
   },
 });
 

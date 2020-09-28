@@ -8,9 +8,7 @@ type Props = {
   onPress: () => void;
   title?: string;
   childrenContainer?: object;
-  containerStyle?: object;
   sliderElement?: React.Component;
-  testID?: string;
 };
 
 const SliderButton: React.FC<Props> = ({
@@ -18,14 +16,12 @@ const SliderButton: React.FC<Props> = ({
   title,
   sliderElement,
   childrenContainer,
-  containerStyle,
-  testID,
 }) => {
   return (
     <Slider
       childrenContainer={childrenContainer}
       onEndReached={onPress}
-      containerStyle={[style.containerStyle, containerStyle]}
+      containerStyle={style.containerStyle}
       sliderElement={
         sliderElement ? (
           sliderElement

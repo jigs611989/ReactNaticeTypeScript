@@ -11,6 +11,7 @@ exports[`renders correctly 1`] = `
       },
       Object {
         "alignItems": "center",
+        "justifyContent": "space-between",
       },
     ]
   }
@@ -37,11 +38,17 @@ exports[`renders correctly 1`] = `
       
     </Text>
   </View>
-  <View
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/asset/image/ReactLoGo.png",
+      }
+    }
     style={
       Object {
-        "backgroundColor": "red",
-        "flex": 1,
+        "height": 300,
+        "resizeMode": "contain",
+        "width": 300,
       }
     }
   />

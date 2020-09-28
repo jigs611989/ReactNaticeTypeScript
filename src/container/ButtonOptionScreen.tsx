@@ -29,7 +29,6 @@ const ButtonOptionScreen: React.FC = () => {
         style={style.buttonStyle}
       />
       <SliderButton
-        testID={'ButtonOption4'}
         onPress={() => Alert.alert('', String.Alert.buttonOption4)}
       />
     </SafeAreaView>

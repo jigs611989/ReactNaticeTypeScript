@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 const DeviceTypeModule = {
   // tslint:disable-next-line:no-empty
   checkDeviceType: () => {},

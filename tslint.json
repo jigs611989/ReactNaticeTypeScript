@@ -14,6 +14,11 @@
     "object-literal-sort-keys": false,
     "quotemark": [true, "single", "jsx-double"],
     "no-empty": [true, "allow-empty-functions"]
+  },
+  "linterOptions": {
+    "exclude": [
+        "**/coverage/**"
+    ]
   }
 }
 

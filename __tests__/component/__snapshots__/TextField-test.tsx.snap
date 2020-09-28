@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Component should match the snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "rgba(11, 18, 30, 0.1)",
+        "borderRadius": 10,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "margin": 20,
+        "padding": 16,
+        "width": "80%",
+      },
+      undefined,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    placeholder="Test placeholder prop"
+    placeholderTextColor="#747577"
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "color": "#101313",
+          "flex": 1,
+          "fontSize": 14,
+          "lineHeight": 16,
+          "padding": 0,
+        },
+        undefined,
+      ]
+    }
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;

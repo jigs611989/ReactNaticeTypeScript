@@ -3,19 +3,19 @@ import AppStyle from '../../asset/AppStyle';
 
 const style = StyleSheet.create({
   ...AppStyle,
-  container: { 
-    alignItems: 'center', 
-    justifyContent: 'center' 
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   textInput: {
     height: 50,
     width: 300,
-    backgroundColor: 'red'
+    backgroundColor: 'red',
   },
   spacer: {
     flex: 1,
-    backgroundColor: 'red'
-  }
-})
+    backgroundColor: 'red',
+  },
+});
 
 export default style;

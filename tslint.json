@@ -5,12 +5,15 @@
     "tslint-react",
     "tslint-config-prettier"
   ],
-  "jsRules": {},
+  "jsRules": {
+    "no-empty": [true, "allow-empty-functions"]
+  },
   "rules": {
     "interface-name": false,
     "jsx-no-lambda": false,
     "object-literal-sort-keys": false,
-    "quotemark": [true, "single", "jsx-double"]
+    "quotemark": [true, "single", "jsx-double"],
+    "no-empty": [true, "allow-empty-functions"]
   }
 }
 

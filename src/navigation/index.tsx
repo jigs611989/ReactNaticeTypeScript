@@ -17,7 +17,7 @@ function OnboardingStack() {
 
 function AppStack() {
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       screenOptions={{
         headerStyle: {
           backgroundColor: Color.primary,
@@ -26,16 +26,16 @@ function AppStack() {
         headerTitleStyle: {
           fontWeight: 'bold',
         },
-    }}>
-      <Stack.Screen 
-        name={Screens.HomeScreen} 
-        component={HomeScreen} 
-        options={{ title: 'Home Screen'}}
+      }}>
+      <Stack.Screen
+        name={Screens.HomeScreen}
+        component={HomeScreen}
+        options={{ title: 'Home Screen' }}
       />
       <Stack.Screen
         name={Screens.ButtonOptionScreen}
         component={ButtonOptionScreen}
-        options={{ title: 'Button Option'}}
+        options={{ title: 'Button Option' }}
       />
     </Stack.Navigator>
   );

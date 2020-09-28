@@ -6,7 +6,7 @@ const Strings = {
     continue: 'Continue',
     buttonOption: 'Button Option Screen',
     pressMe: 'Press me',
-    slideMe: 'Slide me to continue'
+    slideMe: 'Slide me to continue',
   },
   Alert: {
     invalidName: 'Please enter valid name',
@@ -14,7 +14,7 @@ const Strings = {
     buttonOption2: 'Second Button Pressed',
     buttonOption3: 'Third Button Pressed',
     buttonOption4: 'Unlocked!!',
-  }
-}
+  },
+};
 
 export default Strings;

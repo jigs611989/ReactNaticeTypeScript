@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '80%'
+    width: '80%',
   },
   imageStyle: {
     width: 40,
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     margin: 4,
     borderRadius: 5,
     backgroundColor: 'red',
-  }
+  },
 });
 
 export default styles;

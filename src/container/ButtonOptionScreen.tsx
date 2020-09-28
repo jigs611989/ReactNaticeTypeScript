@@ -8,8 +8,8 @@ const ButtonOptionScreen: React.FC = () => {
   return (
     <SafeAreaView style={[style.rootContainer, style.container]}>
       <UserName />
-      <View style={style.spacer}/>
-      <Label title={String.buttonVariationTitle} style={style.labelStyle}/>
+      <View style={style.spacer} />
+      <Label title={String.buttonVariationTitle} style={style.labelStyle} />
       <Button
         testID={'ButtonOption1'}
         title={String.Buttons.pressMe}

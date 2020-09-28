@@ -1,5 +1,4 @@
-
-import { SaveNameAction } from '../action/name'
+import { SaveNameAction } from '../action/name';
 
 const INIT_STATE = {
   name: '',

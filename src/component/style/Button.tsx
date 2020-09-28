@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 20
+    margin: 20,
   },
   text: {
     fontSize: 18,
     color: Color.white,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 });
 

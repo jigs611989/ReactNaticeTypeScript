@@ -7,6 +7,6 @@ const Colors = {
   blueGreyBorder: 'rgba(11, 18, 30, 0.1)',
   blueGrey: 'rgb(11, 18, 30)',
   darkText: '#101313',
-}
+};
 
 export default Colors;

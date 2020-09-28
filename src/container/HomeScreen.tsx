@@ -12,8 +12,8 @@ const HomeScreen: React.FC = () => {
     <SafeAreaView style={[style.rootContainer, style.container]}>
       <UserName />
       <View style={style.spacer} />
-      <Button 
-        title={String.Buttons.buttonOption} 
+      <Button
+        title={String.Buttons.buttonOption}
         onPress={() => navigate(Screens.ButtonOptionScreen)}
         style={style.buttonStyle}
       />

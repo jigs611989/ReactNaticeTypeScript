@@ -35,10 +35,10 @@ const WelcomeScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={[style.rootContainer, style.container]}>
-      <View style={style.spacer}/>
+      <View style={style.spacer} />
       <Label title={Strings.welcome} />
-      <View style={style.spacer}/>
-      <TextField 
+      <View style={style.spacer} />
+      <TextField
         placeholder={Strings.enterYourName}
         value={name}
         onChangeText={(text) => setName(text)}

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     paddingVertical: 30,
 
     shadowColor: Color.black,
-    shadowOffset: {width: 0, height: -5},
+    shadowOffset: { width: 0, height: -5 },
     shadowOpacity: 0.2,
     shadowRadius: 15,
     elevation: 1,
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: Color.black,
     textAlign: 'center',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   description: {
     fontSize: 16,

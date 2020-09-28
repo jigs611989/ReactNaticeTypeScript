@@ -3,14 +3,20 @@ import { Text, TouchableOpacity } from 'react-native';
 import styles from './style/Button';
 
 type Props = {
-  title: string,
-  onPress: () => void,
-  style?: object,
-  textStyle?: object,
-  testID?: string,
+  title: string;
+  onPress: () => void;
+  style?: object;
+  textStyle?: object;
+  testID?: string;
 };
 
-const Button: React.FC<Props> = ({ title, onPress, style, textStyle, testID }) => {
+const Button: React.FC<Props> = ({
+  title,
+  onPress,
+  style,
+  textStyle,
+  testID,
+}) => {
   return (
     <TouchableOpacity
       onPress={onPress}

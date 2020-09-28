@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     padding: 16,
     borderRadius: 10,
     margin: 20,
-    width: '80%'
+    width: '80%',
   },
   input: {
     flex: 1,

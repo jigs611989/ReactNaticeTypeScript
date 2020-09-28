@@ -3,7 +3,9 @@ const { DeviceTypeModule } = NativeModules;
 
 type DeviceType = 'simulator' | 'device';
 
-const checkDeviceType = (callback: (error: string, type: DeviceType) => void) => {
+const checkDeviceType = (
+  callback: (error: string, type: DeviceType) => void,
+) => {
   DeviceTypeModule.checkDeviceType(callback);
 };
 

@@ -15,9 +15,9 @@ const Backdrop = () => (
 );
 
 type Props = {
-  title: string,
-  description?: string,
-  onPress: () => void,
+  title: string;
+  description?: string;
+  onPress: () => void;
 };
 
 const PopUp = (props: Props, ref: any) => {

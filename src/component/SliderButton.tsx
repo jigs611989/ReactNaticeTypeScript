@@ -5,12 +5,12 @@ import { String } from '../asset';
 import style from './style/SliderButton';
 
 type Props = {
-  onPress: () => void,
-  title?: string,
-  childrenContainer?: object,
-  containerStyle?: object,
-  sliderElement?: React.Component,
-  testID?: string
+  onPress: () => void;
+  title?: string;
+  childrenContainer?: object;
+  containerStyle?: object;
+  sliderElement?: React.Component;
+  testID?: string;
 };
 
 const SliderButton: React.FC<Props> = ({
@@ -19,7 +19,7 @@ const SliderButton: React.FC<Props> = ({
   sliderElement,
   childrenContainer,
   containerStyle,
-  testID
+  testID,
 }) => {
   return (
     <Slider

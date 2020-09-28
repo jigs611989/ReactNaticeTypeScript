@@ -3,16 +3,16 @@ import AppStyle from '../../asset/AppStyle';
 
 const style = StyleSheet.create({
   ...AppStyle,
-  container: { 
-    alignItems: 'center', 
+  container: {
+    alignItems: 'center',
   },
   labelStyle: {
-    color: '#adff2f'
+    color: '#adff2f',
   },
   spacer: {
     flex: 1,
-    backgroundColor: 'red'
+    backgroundColor: 'red',
   },
-})
+});
 
 export default style;

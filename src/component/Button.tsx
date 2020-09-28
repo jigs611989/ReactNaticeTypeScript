@@ -7,14 +7,18 @@ type Props = {
   onPress: () => void,
   style?: object,
   textStyle?: object,
-}
+  testID?: string,
+};
 
-const Button: React.FC<Props> = ({title, onPress, style, textStyle}) => {
+const Button: React.FC<Props> = ({ title, onPress, style, textStyle, testID }) => {
   return (
-    <TouchableOpacity onPress={onPress} style={[styles.button, style]}>
+    <TouchableOpacity
+      onPress={onPress}
+      style={[styles.button, style]}
+      testID={testID}>
       <Text style={[styles.text, textStyle]}>{title}</Text>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
 export default Button;

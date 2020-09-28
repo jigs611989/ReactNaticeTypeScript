@@ -10,23 +10,27 @@ const ButtonOptionScreen: React.FC = () => {
       <UserName />
       <View style={style.spacer}/>
       <Label title={String.buttonVariationTitle} style={style.labelStyle}/>
-      <Button 
-        title={String.Buttons.pressMe} 
+      <Button
+        testID={'ButtonOption1'}
+        title={String.Buttons.pressMe}
         onPress={() => Alert.alert('', String.Alert.buttonOption1)}
         textStyle={style.buttonOption1}
       />
-      <Button 
-        title={String.Buttons.pressMe} 
+      <Button
+        testID={'ButtonOption2'}
+        title={String.Buttons.pressMe}
         onPress={() => Alert.alert('', String.Alert.buttonOption2)}
         style={style.buttonOption2}
       />
-      <Button 
-        title={String.Buttons.pressMe} 
+      <Button
+        testID={'ButtonOption3'}
+        title={String.Buttons.pressMe}
         onPress={() => Alert.alert('', String.Alert.buttonOption3)}
         style={style.buttonStyle}
       />
-      <SliderButton 
-        onPress={() => Alert.alert('', String.Alert.buttonOption4)} 
+      <SliderButton
+        testID={'ButtonOption4'}
+        onPress={() => Alert.alert('', String.Alert.buttonOption4)}
       />
     </SafeAreaView>
   );

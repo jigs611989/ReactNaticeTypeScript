@@ -9,15 +9,17 @@ type Props = {
   title?: string,
   childrenContainer?: object,
   containerStyle?: object,
-  sliderElement?: React.Component
-}
+  sliderElement?: React.Component,
+  testID?: string
+};
 
 const SliderButton: React.FC<Props> = ({
-  onPress, 
-  title, 
-  sliderElement, 
-  childrenContainer, 
-  containerStyle
+  onPress,
+  title,
+  sliderElement,
+  childrenContainer,
+  containerStyle,
+  testID
 }) => {
   return (
     <Slider
@@ -25,19 +27,21 @@ const SliderButton: React.FC<Props> = ({
       onEndReached={onPress}
       containerStyle={[style.containerStyle, containerStyle]}
       sliderElement={
-        sliderElement ? sliderElement :
-        <Image
-          style={style.imageStyle}
-          source={{
-            uri:
-              'https://facebook.github.io/react-native/docs/assets/favicon.png',
-          }}
-        />
-      }
-    >
+        sliderElement ? (
+          sliderElement
+        ) : (
+          <Image
+            style={style.imageStyle}
+            source={{
+              uri:
+                'https://facebook.github.io/react-native/docs/assets/favicon.png',
+            }}
+          />
+        )
+      }>
       <Text>{title ? title : String.Buttons.slideMe}</Text>
     </Slider>
-  )
-}
+  );
+};
 
 export default SliderButton;

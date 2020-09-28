@@ -1,4 +1,5 @@
 import 'react-native-gesture-handler/jestSetup';
+import { Alert } from 'react-native';
 
 // eslint-disable-next-line no-undef
 jest.mock('react-native-reanimated', () => {
@@ -14,3 +15,16 @@ jest.mock('react-native-reanimated', () => {
 // Silence the warning: Animated: `useNativeDriver` is not supported because the native animated module is missing
 // eslint-disable-next-line no-undef
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper');
+
+jest.mock('react-native', () => {
+  const RN = jest.requireActual('react-native');
+  return Object.setPrototypeOf(
+    {
+      Alert: {
+        ...RN.Alert,
+        alert: jest.fn(),
+      },
+    },
+    RN,
+  );
+});

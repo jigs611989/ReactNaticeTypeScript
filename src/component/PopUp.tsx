@@ -6,8 +6,8 @@ import React, {
 } from 'react';
 import { Modal, View } from 'react-native';
 import { BlurView } from '@react-native-community/blur';
-import Label from './Label'
-import Button from './Button'
+import Label from './Label';
+import Button from './Button';
 import styles from './style/PopUp';
 
 const Backdrop = () => (
@@ -18,7 +18,7 @@ type Props = {
   title: string,
   description?: string,
   onPress: () => void,
-}
+};
 
 const PopUp = (props: Props, ref: any) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,26 +31,21 @@ const PopUp = (props: Props, ref: any) => {
     hide,
   }));
 
-  const {title, description, onPress} = props
+  const { title, description, onPress } = props;
 
   return (
     <Modal
       visible={isVisible}
       onRequestClose={() => setIsVisible(false)}
-      transparent={true}
-    >
+      transparent={true}>
       <View style={styles.container}>
         <Backdrop />
         <View style={styles.popUp}>
           <Label title={title} style={styles.title} />
           {description ? (
-              <Label title={description} style={styles.description} />
-            ) : null}
-          <Button
-            title={'Okay'}
-            onPress={onPress}
-            style={styles.buttonStyle}
-          />
+            <Label title={description} style={styles.description} />
+          ) : null}
+          <Button title={'Okay'} onPress={onPress} style={styles.buttonStyle} />
         </View>
       </View>
     </Modal>

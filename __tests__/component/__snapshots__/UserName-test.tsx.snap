@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserName Component should match the snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-end",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontSize": 24,
+        "lineHeight": 28,
+        "margin": 16,
+        "marginBottom": 2,
+      }
+    }
+  >
+    Test User
+  </Text>
+</View>
+`;

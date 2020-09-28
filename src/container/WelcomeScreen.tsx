@@ -19,20 +19,19 @@ const WelcomeScreen: React.FC = () => {
 
   useEffect(() => {
     checkDeviceType((error, type) => {
-      // Alert.alert('You are running on ' + type);
-      setDeviceType(type)
-      popupRef.current?.show()
+      setDeviceType(type);
+      popupRef.current?.show();
     });
   }, []);
 
   const onPressContinue = useCallback(() => {
-    if(isValidName(name)) {
-      dispatch(saveName(name))
-      navigate(Screens.AppStack)
+    if (isValidName(name)) {
+      dispatch(saveName(name));
+      navigate(Screens.AppStack);
     } else {
-      Alert.alert('', Strings.Alert.invalidName)
+      Alert.alert('', Strings.Alert.invalidName);
     }
-  }, [name])
+  }, [dispatch, name, navigate]);
 
   return (
     <SafeAreaView style={[style.rootContainer, style.container]}>
@@ -45,12 +44,12 @@ const WelcomeScreen: React.FC = () => {
         onChangeText={(text) => setName(text)}
         autoCorrect={false}
       />
-      <Button 
-        title={Strings.Buttons.continue} 
+      <Button
+        title={Strings.Buttons.continue}
         onPress={onPressContinue}
         style={style.buttonStyle}
       />
-      <View style={style.spacer}/>
+      <View style={style.spacer} />
       <PopUp
         ref={popupRef}
         title={'Device Type'}

@@ -4,9 +4,11 @@ const INIT_STATE = {
   name: '',
 };
 
-type AppState = {};
+type AppState = {
+  name: string
+};
 
-const counterReducer = (
+const nameReducer = (
   state: AppState = INIT_STATE,
   action: SaveNameAction,
 ): AppState => {
@@ -16,4 +18,4 @@ const counterReducer = (
   return state;
 };
 
-export default counterReducer;
+export default nameReducer;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { Label } from '../component';
 import { useSelector } from 'react-redux';
 import style from './style/UserName';
 
@@ -8,7 +9,7 @@ const UserName = () => {
 
   return (
     <View style={style.container}>
-      <Text style={style.text}>{name}</Text>
+      <Label style={style.text} title={name} />
     </View>
   );
 };

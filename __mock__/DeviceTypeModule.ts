@@ -1,7 +1,7 @@
-// import React from 'react';
 const DeviceTypeModule = {
-  // tslint:disable-next-line:no-empty
-  checkDeviceType: () => {},
+  checkDeviceType: (callback: (error: string | null, type: string) => void) => {
+    callback(null, 'simulator');
+  },
 };
 export const checkDeviceType = DeviceTypeModule.checkDeviceType;
 export default DeviceTypeModule;

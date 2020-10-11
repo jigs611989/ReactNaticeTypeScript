@@ -3,16 +3,15 @@ import { Label } from '../../src/component';
 import { render } from '@testing-library/react-native';
 
 describe('Label Component', () => {
-  const labelTitle = 'TestLabel';
 
-  it('should have a title', async () => {
-    const { findByText } = render(<Label title={labelTitle} />);
-    const title = await findByText(labelTitle);
+  it('should have a title', () => {
+    
+    const labelTitle = 'TestLabel';
+    const { getByText, toJSON } = render(<Label title={labelTitle} />);
+    const title = getByText(labelTitle);
     expect(title).toBeDefined();
-  });
 
-  it('should match the snapshot', () => {
-    const { toJSON } = render(<Label title={labelTitle} />);
+    // should match the snapshot
     expect(toJSON()).toMatchSnapshot();
   });
 });

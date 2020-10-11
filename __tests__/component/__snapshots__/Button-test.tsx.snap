@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Component should match the snapshot 1`] = `
+exports[`Button Component should have a title & should call onPress when pressed 1`] = `
 <View
   accessible={true}
   focusable={true}

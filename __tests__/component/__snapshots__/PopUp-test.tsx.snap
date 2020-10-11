@@ -1,3 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PopUp should match the snapshot 1`] = `null`;
+exports[`PopUp should have a title & description 1`] = `
+<Modal
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  testID="ErrorPopupModal"
+  transparent={true}
+  visible={false}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 12,
+          "elevation": 1,
+          "justifyContent": "center",
+          "maxHeight": 740,
+          "maxWidth": 340,
+          "paddingHorizontal": 20,
+          "paddingVertical": 30,
+          "shadowColor": "#0B121E",
+          "shadowOffset": Object {
+            "height": -5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+          "shadowRadius": 15,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 24,
+              "lineHeight": 28,
+              "margin": 16,
+              "marginBottom": 2,
+            },
+            Object {
+              "color": "#0B121E",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "marginVertical": 9,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        popUpTest
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 24,
+              "lineHeight": 28,
+              "margin": 16,
+              "marginBottom": 2,
+            },
+            Object {
+              "color": "#747577",
+              "fontSize": 16,
+              "marginBottom": 32,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        testing descption
+      </Text>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#f7a934",
+            "borderRadius": 10,
+            "height": 50,
+            "justifyContent": "center",
+            "margin": 20,
+            "opacity": 1,
+            "width": 300,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 18,
+                "fontWeight": "bold",
+              },
+              undefined,
+            ]
+          }
+        >
+          Okay
+        </Text>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;

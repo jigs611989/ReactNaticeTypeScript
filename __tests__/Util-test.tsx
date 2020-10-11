@@ -1,4 +1,4 @@
-import { isValidName } from '../src/util';
+import { isValidName } from '../src/util/util';
 
 describe('Name Valiadtion', () => {
   it('should be true for valid name', () => {

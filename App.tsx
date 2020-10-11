@@ -10,7 +10,7 @@
 
 import React from 'react';
 import 'react-native-gesture-handler';
-import MainNavigation from './src/navigation';
+import MainNavigation from './src/navigation/MainNavigation';
 import { Provider } from 'react-redux';
 import { createReduxStore } from './src/redux/store';
 

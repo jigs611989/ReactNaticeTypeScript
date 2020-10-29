@@ -2,17 +2,32 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 import { HomeScreen } from '../../src/container';
-import { render } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
+import { String } from '../../src/asset';
+import { mockedNavigate } from '../../__mock__/setup';
 
-const mockStore = configureStore();
+describe('HomeScreen', () => {
 
-it('renders correctly', () => {
-  const initialState = { name: '' };
-  const store = mockStore(initialState);
-  const { toJSON } = render(
-    <Provider store={store}>
-      <HomeScreen />
-    </Provider>,
-  );
-  expect(toJSON()).toMatchSnapshot();
+  it('render correctly', () => {
+    
+    const mockStore = configureStore();
+    const initialState = { name: '' };
+    const store = mockStore(initialState);
+    const { toJSON, getByText } = render(
+      <Provider store={store}>
+        <HomeScreen />
+      </Provider>,
+    );
+
+    // check button click event
+    const buttonOption = getByText(String.Buttons.buttonOption);
+    fireEvent.press(buttonOption);
+    expect(mockedNavigate).toHaveBeenCalledTimes(1);
+
+    // should match the snapshot
+    expect(toJSON()).toMatchSnapshot();
+  });
+
 });
+
+

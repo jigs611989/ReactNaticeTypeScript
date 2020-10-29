@@ -1,5 +1,4 @@
 import 'react-native-gesture-handler/jestSetup';
-// import { Alert } from 'react-native';
 
 jest.mock('react-native-reanimated', () => {
   const Reanimated = require('react-native-reanimated/mock');
@@ -13,6 +12,17 @@ jest.mock('react-native-reanimated', () => {
 
 // Silence the warning: Animated: `useNativeDriver` is not supported because the native animated module is missing
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper');
+
+export const mockedNavigate = jest.fn();
+
+jest.mock('@react-navigation/native', () => {
+  return {
+    ...jest.requireActual('@react-navigation/native'),
+    useNavigation: () => ({
+      navigate: mockedNavigate,
+    }),
+  };
+});
 
 jest.mock('react-native', () => {
   const RN = jest.requireActual('react-native');

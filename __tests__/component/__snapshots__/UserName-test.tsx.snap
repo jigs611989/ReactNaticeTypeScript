@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserName Component should match the snapshot 1`] = `
+exports[`UserName Component should have a title as set in redux mock store 1`] = `
 <View
   style={
     Object {

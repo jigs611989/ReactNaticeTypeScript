@@ -7,25 +7,20 @@ import { render } from '@testing-library/react-native';
 const mockStore = configureStore();
 
 describe('UserName Component', () => {
-  const initialState = { name: 'Test User' };
-  const store = mockStore(initialState);
 
   it('should have a title as set in redux mock store', () => {
-    const { getByText } = render(
+
+    const initialState = { name: 'Test User' };
+    const store = mockStore(initialState);
+    const { getByText, toJSON } = render(
       <Provider store={store}>
         <UserName />
       </Provider>,
     );
     const nameLabel = getByText(initialState.name);
     expect(nameLabel).toBeDefined();
-  });
 
-  it('should match the snapshot', () => {
-    const { toJSON } = render(
-      <Provider store={store}>
-        <UserName />
-      </Provider>,
-    );
+    // should match the snapshot
     expect(toJSON()).toMatchSnapshot();
   });
 });

@@ -6,7 +6,7 @@ import Strings from '../asset/String';
 import { Button, Label, TextField, PopUp } from '../component';
 import { Screens } from '../constant/AppConstant';
 import { saveName } from '../redux/action/name';
-import { isValidName } from '../util';
+import { isValidName } from '../util/util';
 import style from './style/WelcomeScreen';
 import { checkDeviceType } from '../nativeModule/DeviceType';
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField Component should match the snapshot 1`] = `
+exports[`TextField Component should have a placeholder & should call onChangeText when user is typing 1`] = `
 <View
   style={
     Array [
@@ -21,6 +21,21 @@ exports[`TextField Component should match the snapshot 1`] = `
 >
   <TextInput
     allowFontScaling={true}
+    onChangeText={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "testing",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
     placeholder="Test placeholder prop"
     placeholderTextColor="#747577"
     rejectResponderTermination={true}

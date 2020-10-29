@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`WelcomeScreen should render correctly 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={
@@ -86,7 +86,7 @@ exports[`renders correctly 1`] = `
         ]
       }
       underlineColorAndroid="transparent"
-      value=""
+      value="Jignesh"
     />
   </View>
   <View
@@ -138,6 +138,7 @@ exports[`renders correctly 1`] = `
   <Modal
     hardwareAccelerated={false}
     onRequestClose={[Function]}
+    testID="ErrorPopupModal"
     transparent={true}
     visible={false}
   >
@@ -214,7 +215,7 @@ exports[`renders correctly 1`] = `
             ]
           }
         >
-          You are running on 
+          You are running on simulator
         </Text>
         <View
           accessible={true}

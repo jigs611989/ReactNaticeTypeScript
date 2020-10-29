@@ -13,7 +13,7 @@ const nameReducer = (
   action: SaveNameAction,
 ): AppState => {
   if (action.type === 'SAVE_NAME') {
-    return { ...state, name: action.payload };
+    return { ...state, name: action.name };
   }
   return state;
 };

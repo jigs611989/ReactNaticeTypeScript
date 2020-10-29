@@ -35,6 +35,7 @@ const PopUp = (props: Props, ref: any) => {
 
   return (
     <Modal
+      testID="ErrorPopupModal"
       visible={isVisible}
       onRequestClose={() => setIsVisible(false)}
       transparent={true}>
